@@ -14,34 +14,40 @@
   <body>
     <div class="book__page">
       <div class="card-book">
-        <div class="card-book__name">
-          <p class="card-book__name-text">Name book</p>
-          <textarea name="text" cols="30" rows="5" id="text" readonly="">
+        <div class="card-book__div">
+          <p class="card-book__text">Name book</p>
+          <textarea
+            class="card-book__textarea"
+            name="text"
+            cols="30"
+            rows="5"
+            id="text"
+          >
           </textarea>
         </div>
-        <div class="card-book__description">
-          <p class="card-book__description-text">Description book</p>
+        <div class="card-book__div">
+          <p class="card-book__text">Description book</p>
           <textarea
+            class="card-book__textarea"
             name="text"
             cols="50"
             rows="7"
             id="text"
-            readonly=""
           ></textarea>
         </div>
-        <div class="card-book__mark">
-          <p class="card-book__mark-text">Mark</p>
-          <select class="select__text">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-            <option>6</option>
-            <option>7</option>
-            <option>8</option>
-            <option>9</option>
-            <option>10</option>
+        <div class="card-book__div">
+          <p class="card-book__text">Mark</p>
+          <select class="card-book__select">
+            <option class="card-book__select-text">1</option>
+            <option class="card-book__select-text">2</option>
+            <option class="card-book__select-text">3</option>
+            <option class="card-book__select-text">4</option>
+            <option class="card-book__select-text">5</option>
+            <option class="card-book__select-text">6</option>
+            <option class="card-book__select-text">7</option>
+            <option class="card-book__select-text">8</option>
+            <option class="card-book__select-text">9</option>
+            <option class="card-book__select-text">10</option>
           </select>
         </div>
         <img
@@ -50,8 +56,8 @@
           width="196"
           height="333"
         />
-        <button class="card-book__add-book">
-          <p class="card-book__add-book-text">Add book</p>
+        <button class="card-book__button">
+          <p class="card-book__text">Add book</p>
         </button>
       </div>
     </div>
