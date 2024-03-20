@@ -1,0 +1,108 @@
+:root {
+  --black: #000000;
+  --blue-light: #afe5e8;
+  --purple-light: #d6b5ea;
+  --red-light: #ecaaaa;
+  --gray-light: #616161;
+  --font: "Montserrat", sans-serif;
+  --border-radius1: 25px;
+  --border-radius2: 10px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: var(--black);
+  text-decoration: none;
+  cursor: pointer;
+  width: 53px;
+  height: 390px;
+}
+/*Container*/
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.book__page {
+  display: flex;
+  flex-direction: row;
+  padding: 42px 35px;
+  gap: 42px;
+}
+.list-books {
+  display: flex;
+  background-color: var(--blue-light);
+  border-radius: var(--border-radius1);
+  flex-direction: column;
+  gap: 20px;
+}
+/*Item*/
+.list-books__item {
+  display: flex;
+  background-color: var(--purple-light);
+  border-radius: var(--border-radius2);
+  gap: 20px;
+  padding: 20px 20px;
+  margin: 20px 30px;
+}
+.book__image {
+  border-radius: var(--border-radius2);
+  border: 1px solid var(--gray-light);
+  -webkit-box-shadow: 4px 4px 10px 12px rgba(97, 97, 97, 0.2);
+  -moz-box-shadow: 4px 4px 10px 12px rgba(97, 97, 97, 0.2);
+  box-shadow: 4px 4px 10px 12px rgba(97, 97, 97, 0.2);
+}
+.list-books__item-text {
+  display: flex;
+  margin: 25px 55px 14px 16px;
+  gap: 30px;
+  flex-direction: column;
+}
+.text__name {
+  font: 500 24px var(--font);
+}
+.text__description {
+  font: 400 22px var(--font);
+}
+.item-text__mark {
+  font: 400 20px var(--font);
+}
+/*Item button*/
+.list-books__item-button {
+  background-color: var(--red-light);
+  border-radius: var(--border-radius2);
+}
+.button__text {
+  font: 500 22px var(--font);
+}
+/*Button List book*/
+.list-books__button {
+  background-color: var(--red-light);
+  border-radius: var(--border-radius2);
+  margin: 77px 30px 20px 30px;
+}
+/*Name book*/
+.name-book {
+  display: flex;
+  background-color: var(--blue-light);
+  border-radius: var(--border-radius1);
+  flex-direction: row;
+  padding: 40px;
+  gap: 40px;
+}
+.name-book__text {
+  display: flex;
+  margin: 40px;
+  gap: 50px;
+  flex-direction: column;
+}

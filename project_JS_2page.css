@@ -1,0 +1,57 @@
+:root {
+  --black: #000000;
+  --blue-light: #afe5e8;
+  --purple-light: #d6b5ea;
+  --red-light: #ecaaaa;
+  --gray-light: #616161;
+  --font: "Montserrat", sans-serif;
+  --border-radius1: 25px;
+  --border-radius2: 10px;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+/*Container*/
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.book__page {
+  display: flex;
+  flex-direction: column;
+  padding: 42px 35px;
+}
+.card-book {
+  display: flex;
+  background-color: var(--blue-light);
+  border-radius: var(--border-radius1);
+  flex-direction: column;
+  padding: 20px 25px;
+  gap: 10px;
+}
+.card-book__name {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.card-book__description {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.card-book__img-book {
+}
