@@ -45,7 +45,6 @@ a {
   gap: 10px;
 }
 .card-book__div {
-  gap: 10px;
   display: flex;
   flex-direction: column;
   margin: 20px 25px 0 25px;
@@ -56,15 +55,23 @@ a {
 .card-book__textarea {
   border-radius: var(--border-radius2);
 }
+.select {
+  display: grid;
+  gap: 10px;
+  margin: 20px 60px;
+}
 .card-book__select {
   height: 45px;
   font-size: 22px;
 }
 .card-book__select-text {
-  font: 500 22px var(--font);
+  font: 500 14px var(--font);
 }
 .card-book__img-book {
-  margin: 20px auto;
+  margin: 20px 90px;
+}
+.card-book__img-book-style {
+  font: 500 30px var(--font);
 }
 .card-book__button {
   border-radius: var(--border-radius2);
