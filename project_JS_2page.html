@@ -10,60 +10,64 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script type="text/javascript" src="project_JS_2.js"></script>
   </head>
   <body>
-    <form class="book__page">
+    <form id="bookForm" class="book__page">
       <div class="card-book">
         <div class="card-book__div">
-          <p class="card-book__text">Name book</p>
-          <textarea
+          <label class="card-book__text">Name book</label>
+          <input
             class="card-book__textarea"
-            name="text"
-            cols="30"
-            rows="5"
-            id="text"
-          >
-          </textarea>
+            id="nameBook"
+            type="text"
+            name="nameBook"
+            autocomplete="off"
+          />
         </div>
         <div class="card-book__div">
-          <p class="card-book__text">Description book</p>
-          <textarea
+          <label class="card-book__text">Description book</label>
+          <input
             class="card-book__textarea"
-            name="text"
-            cols="50"
-            rows="7"
-            id="text"
-          ></textarea>
+            id="descriptionBook"
+            type="text"
+            name="descriptionBook"
+            autocomplete="off"
+          />
         </div>
         <div class="card-book__div">
-          <p class="card-book__text">Mark</p>
-          <select class="card-book__select">
-            <option class="card-book__select-text">1</option>
-            <option class="card-book__select-text">2</option>
-            <option class="card-book__select-text">3</option>
-            <option class="card-book__select-text">4</option>
-            <option class="card-book__select-text">5</option>
-            <option class="card-book__select-text">6</option>
-            <option class="card-book__select-text">7</option>
-            <option class="card-book__select-text">8</option>
-            <option class="card-book__select-text">9</option>
-            <option class="card-book__select-text">10</option>
+          <label class="card-book__text">Mark</label>
+          <select class="card-book__select" id="mark" name="mark">
+            <option class="card-book__select-text" value="1">1</option>
+            <option class="card-book__select-text" value="2">2</option>
+            <option class="card-book__select-text" value="3">3</option>
+            <option class="card-book__select-text" value="4">4</option>
+            <option class="card-book__select-text" value="5">5</option>
+            <option class="card-book__select-text" value="6">6</option>
+            <option class="card-book__select-text" value="7">7</option>
+            <option class="card-book__select-text" value="8">8</option>
+            <option class="card-book__select-text" value="9">9</option>
+            <option class="card-book__select-text" value="10">10</option>
           </select>
         </div>
-        <img
-          class="card-book__img-book"
-          src="img/images_1.jpg"
-          width="196"
-          height="333"
-        />
+        <label class="card-book__img-book">
+          <input
+            class="card-book__img-book-style"
+            id="imgBook"
+            type="file"
+            name="photo"
+            accept="image/jpg"
+          />
+        </label>
         <button
-          onclick="window.location = 'project_JS_2.html'"
+          onclick="window.location.href = 'project_JS_2.html'"
           class="card-book__button"
+          id="btn2"
+          type="submit"
         >
           <p class="card-book__text">Add book</p>
         </button>
       </div>
     </form>
+    <script type="text/javascript" src="project_JS_2.js"></script>
   </body>
 </html>
