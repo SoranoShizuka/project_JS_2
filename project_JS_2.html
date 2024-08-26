@@ -11,62 +11,85 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <div class="book__page container">
-      <div class="list-books container">
-        <div class="list-books__item">
-          <img
-            class="book__image"
-            src="img/images_1.jpg"
-            width="150"
-            height="210"
-          />
-          <div class="list-books__item-text">
-            <p class="text__name">Name book</p>
-            <p class="text__description">Lorem ipsum dolor sit</p>
-            <p class="item-text__mark">9 из 10</p>
-            <button class="list-books__item-button">
-              <p class="button__text">Open</p>
-            </button>
-          </div>
-        </div>
-        <div class="list-books__item">
-          <img
-            class="book__image"
-            src="img/images_2.jpg"
-            width="150"
-            height="210"
-          />
-          <div class="list-books__item-text">
-            <p class="text__name">Name book</p>
-            <p class="text__description">Lorem ipsum dolor sit</p>
-            <p class="item-text__mark">9 из 10</p>
-            <button class="list-books__item-button">
-              <p class="button__text">Open</p>
-            </button>
-          </div>
-        </div>
-          <button onclick="window.location = 'project_JS_2page.html'" class="list-books__button">
-            <p class="button__text">Add book</p>
+  <body onload="newBook()">
+    <div id="page" class="book__page container">
+      <div id="bookColumn" class="book__column">
+        <ul id="list" class="list-books container">
+          <li id="bookItem" class="list-books__item bookItem1">
+            <img
+              id="bookImg"
+              class="book__image"
+              src="img/images_1.jpg"
+              width="150"
+              height="210"
+            />
+            <div id="textItem" class="list-books__item-text">
+              <p id="textName" class="text__name">Name book</p>
+              <p id="textDescription" class="text__description">
+                Lorem ipsum dolor sit
+              </p>
+              <p id="textMark" class="item-text__mark">9 из 10</p>
+              <button
+                onclick="openBook(this)"
+                id="button"
+                class="list-books__item-button"
+              >
+                <p id="textButton" class="button__text">Open</p>
+              </button>
+            </div>
+          </li>
+          <li id="bookItem" class="list-books__item bookItem2">
+            <img
+              id="bookImg"
+              class="book__image"
+              src="img/images_2.jpg"
+              width="150"
+              height="210"
+            />
+            <div id="textItem" class="list-books__item-text">
+              <p id="textName" class="text__name">Name book</p>
+              <p id="textDescription" class="text__description">
+                Lorem ipsum dolor sit
+              </p>
+              <p id="textMark" class="item-text__mark">9 из 10</p>
+              <button
+                onclick="openBook(this)"
+                id="button"
+                class="list-books__item-button"
+              >
+                <p id="textButton" class="button__text">Open</p>
+              </button>
+            </div>
+          </li>
+        </ul>
+        <div class="btn">
+          <button
+            id="btn"
+            onclick="window.location = 'project_JS_2page.html'"
+            class="list-books__button"
+          >
+            <p id="buttonText" class="button__text">Add book</p>
           </button>
-        </form>
+        </div>
       </div>
 
-      <div class="name-book container">
-        <img
-          class="book__image"
-          src="img/images_3.jpg"
-          width="280"
-          height="390"
-        />
-        <div class="name-book__text">
-          <p class="text__name">Name book</p>
-          <p class="text__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
+      <div id="showBook" class="name-book container">
+        <div id="showBook-item" class="showBook-item">
+          <img
+            class="book__image"
+            src="img/images_3.jpg"
+            width="280"
+            height="390"
+          />
+          <div id="showBookText" class="name-book__text">
+            <p id="showText__name" class="text__name">Name book</p>
+            <p id="showText__description" class="text__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
         </div>
       </div>
     </div>
