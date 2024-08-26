@@ -78,3 +78,8 @@ a {
   margin: 20px 25px 0 25px;
   background-color: var(--red-light);
 }
+.card-book__button-text {
+  text-align: center;
+  font: 500 34px var(--font);
+  color: #000000;
+}

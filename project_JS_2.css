@@ -28,6 +28,10 @@ a {
   width: 53px;
   height: 390px;
 }
+ul,
+li {
+  list-style: none;
+}
 /*Container*/
 .container {
   width: 100%;
@@ -37,10 +41,13 @@ a {
   display: flex;
   flex-direction: row;
   padding: 42px 35px;
-  gap: 42px;
+  gap: 100px;
 }
-.list-books {
+.list-books,
+.book__column {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   background-color: var(--blue-light);
   border-radius: var(--border-radius1);
   flex-direction: column;
@@ -61,6 +68,8 @@ a {
   -webkit-box-shadow: 4px 4px 10px 12px rgba(97, 97, 97, 0.2);
   -moz-box-shadow: 4px 4px 10px 12px rgba(97, 97, 97, 0.2);
   box-shadow: 4px 4px 10px 12px rgba(97, 97, 97, 0.2);
+  width: 150px;
+  height: 210px;
 }
 .list-books__item-text {
   display: flex;
@@ -78,6 +87,11 @@ a {
   font: 400 20px var(--font);
 }
 /*Item button*/
+.btn {
+  display: flex;
+  justify-content: center;
+  margin: 20px 30px;
+}
 .list-books__item-button {
   background-color: var(--red-light);
   border-radius: var(--border-radius2);
@@ -87,9 +101,11 @@ a {
 }
 /*Button List book*/
 .list-books__button {
+  width: 100%;
   background-color: var(--red-light);
   border-radius: var(--border-radius2);
   margin: 77px 30px 20px 30px;
+  padding: 20px;
 }
 /*Name book*/
 .name-book {
